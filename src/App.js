@@ -26,7 +26,6 @@ function App() {
     setCity(input)
   }
 
-  console.log(weatherDetails);
 
   return (
 
