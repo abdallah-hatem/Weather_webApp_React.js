@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+body {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   background-color: #121212;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-wrapp {
+   display: flex;
+   justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+   display: flex;
+   justify-self: center;
+   background-color: rgb(33, 44, 44);
+   width: 60%;
+   margin-top: 40px;
+   border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-img {
+   width: 60%;
+   margin-bottom: -4px;
+   position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-details {
+   display: flex;
+   position: absolute;
+   bottom: 0%;
+   right: 40%;
+}
+
+.card-img p {
+   font-size: 40px;
+   font-weight: 600;
+   color: white;
+}
+
+.card-img p #degree {
+   font-size: 70px;
+}
+
+.card-img #days {
+   position: absolute;
+   bottom: 0%;
+   left: 4%;
+   font-size: 20px;
+   font-weight: 200;
+   color: white;
+}
+
+.card-img img {
+   height: 500px;
+   width: 100%;
+   border-radius: 5px 0 0 5px;
+}
+
+.card-details {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 40%;
+   padding-top: 25px;
+   color: white;
+}
+
+.card-details input {
+   width: 80%;
+   background-color: transparent;
+   color: white;
+   border: none;
+   border-bottom: 1px solid white;
+   font-size: 20px;
+}
+
+.card-details input::placeholder {
+   color: lightgray;
+}
+
+.search button {
+   background-color: transparent;
+   color: white;
+   border: 1px solid gray;
+   border-radius: 5px;
+   margin-left: 2px;
+   cursor: pointer;
+   font-size: 20px;
+}
+
+.weather-details {
+   width: 90%;
+}
+
+.weather-details h2 {
+   text-align: center;
+   margin-bottom: 100px;
+}
+
+.weather-details p {
+   margin-bottom: 30px;
+   font-weight: 600;
+   font-size: 20px;
+   position: relative;
+}
+.weather-details p span {
+   font-weight: 400;
+   font-size: 20px;
+   position: absolute;
+   right: 20%;
 }
